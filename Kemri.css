@@ -1,0 +1,106 @@
+.Header{
+    background-color: blue;
+    width: auto;
+    overflow: hidden;
+    
+    }
+    
+    .Header a {
+        float: left;
+        display: block;
+        color: tomato;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        
+        }
+    
+        .Header .icon { 
+    
+    display: none;
+        }
+
+     
+            body{
+                color: white;
+                }
+                a{
+                    background: blue;
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 400;
+                    
+                    }
+        .header a {
+            float: left;
+            display: block;
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+
+
+        }
+
+        input[type=email] {
+
+
+            width: 40%;
+            padding: 15px 22px;
+            margin: 10px 5px;
+            box-sizing: border-box;
+            background-color: blue;
+            color:white;
+        
+        }
+
+        .button {
+            border: none;
+            color:white;
+            background-color: blue;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+          .Contact {background-color: #4CAF50;}
+
+          div.a {
+            text-align: left;
+          }
+
+          @media screen and (max-width: 600px) {
+
+            .Header.responsive {position: relative;}
+            .Header.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        .Header.responsive a{
+                float: right;
+                display: block;
+                text-align:left;
+            }
+        }
+        input[type=submit]:hover{
+            background-color: lightblue;
+            color: white;
+            border-radius: 5px;
+        }
+
+        input[type=submit] {
+            background-color: blue;
+            color:white;
+            width: fit-content;
+            padding: 10px 20px;
+            border: 10px;
+            }
+          
+          
+            
