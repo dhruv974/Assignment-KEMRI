@@ -17,35 +17,50 @@ function myFunction() {
     
 }
 
+</script>
 
+
+<script>
+function validateForm() {
+  var email = document.forms["FAQForm"]["email"].value;
+  if (email.value == "") {
+    alert("Email must be filled out.");
+    return false;
+  }
+
+  return true;
+}
 </script>
 
 <body bgcolor="#7285fd ">
+  <img src="icon_1.png" width="5%" align="left"> 
     <marquee direction=right behavior=alternate> <font color="white" face="rockwell"> <u> <h1> <center> KEMRI </u> </h1> </marquee> </font> </center> </a>
 
     <div class="Header" id="FirstHeader">
       <a href="index.html">Home</a> 
         <a href="services.html">Services</a>
          <a href="FAQ.html">FAQ</a>
-         <a href="Kemri_about.html">About</a><br>
+         <a href="about.html">About</a><br>
          
         <i class="fa fa-bars"> </i>
         
     </div>
 
-    <form action="FAQ.html" method="post">
-        <div>
-         <font color="white"> <p> E-mail: <br> <input type="email" name="email" size="50" required> </p> 
+    <form name="FAQForm" action="FAQ.html" onsubmit="return validateForm()" method="post">
+        <div> <center>
+         <font color="white"> <p> E-mail: <br> <input type="text" name="email" size="70" required> </p> 
         <font color="white"> <p> Comment:
             <br> 
         <textarea rows="10" cols="76" required> 
 
 
             
-        </textarea>
+        </textarea> </center>
         <br>
         <br>
-        <button type="button" onclick="alert('Your inquiry will be replied to via email!')"><input type="submit"> </button> 
+        
+       <center><input type="submit" onclick="alert('Your inquiry will be replied to via email!')"
+                       value="Send" name="Submit" /> </center>
         
         </div>
       </form>

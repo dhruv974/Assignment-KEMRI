@@ -26,12 +26,11 @@ function myFunction() {
 </script>
 
 <body bgcolor="#7285fd ">
-
     <img src="icon_1.png" width="5%" align="left"> 
     <marquee direction=right behavior=alternate> <font color="white" face="rockwell"> <u> <h1> <center> KEMRI </u> </h1> </marquee> </font> </center> </a>
 
     <div class="Header" id="FirstHeader">
-      <a href="#">Home</a> 
+      <a href="index.html">Home</a> 
         <a href="services.html">Services</a>
          <a href="FAQ.html">FAQ</a>
          <a href="about.html">About</a><br>
@@ -41,38 +40,34 @@ function myFunction() {
     </div>
     <br>
     <br>
-    
-        <a href="services.html"><img src="biotech.jpg" width="490" height="490"></a>
-        <a href="services.html"><img src="virus.jpg" width="490" height="490"></a>
-        <a href="services.html"><img src="drugs.jpg" width="490" height="490"></a>
 
+    <form name="ContactForm" action="contact.html" method="post">
+        <div> <center>
+         <font color="white"> <p> E-mail: <br> </font> <input type="text" name="email" size="70" required> </p> 
+       <font color="white"> Inquiry Type: </font>
+            <select type="text" value="" name="Type" class="custom-select"> 
+                <option>Service query</option> 
+                <option>Website issue</option> 
+                <option>Suggestions/Complaints</option> 
+                <option>Customer support</option> 
+            </select> 
+        </center>
 
-    <br>
-  
-<footer>
-  <button class="button" type="button" onclick="window.location.href='contact.html';">
-  Contact 
-  </button>
-
-
-</footer>
-
-    
-
-
-
-
+            
+            <br>
+            <br>
+           <center> <input type="submit" onclick="alert('Submitted!')"
+                       value="Submit" name="Submit" /> </center>
 
 
 
-
-
-
-</body>
+         </form>
 
 
 
 
 
 
-</html>
+
+    </body>
+    </html>
